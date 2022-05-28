@@ -1,0 +1,244 @@
+.hero{
+    /* display: flex;  */
+   
+    background-color: #FFB8CA;
+    @media screen and (max-width:767px){
+        /* min-width: 320px;
+        min-height: 444px;
+        justify-content: center; */
+    }
+    @media screen and (min-width:768px){
+        min-width: 468px;
+        min-height: 416px;
+
+    }  
+    
+}
+
+.hero-button-blok{
+    display: flex;
+    gap: 8px;
+}
+
+body{
+    margin: 0;
+}
+
+
+.hero-blok{
+    position: relative;    
+    width: 320px;
+    min-height: 444px;
+    background-size: cover;
+    background-color: #FFB8CA;
+    @media screen and (min-width:768px){
+        width: 768px;
+        height: 416px;
+    }
+  
+}
+
+.box{
+    position: absolute;
+    
+}
+.box:nth-child(1){
+    z-index: 4;    
+    @media screen and (max-width:767px){        
+        left: 20px;
+        bottom: 158px;
+    }
+
+    @media screen and (min-width:768px){
+        bottom: 190px;
+        left: 32px;
+    }
+
+}
+.box:nth-child(3){
+    z-index: 3;
+    
+    @media screen and (max-width:767px){
+        top: 34px;
+        left: 117px;
+        width: 171px;
+        height: 410px;
+        
+    }
+    @media screen and (min-width:768px){
+        bottom: 0;
+        left: 322px;
+        width: 143px;
+        height: 336px;
+    }
+    @media screen and (min-width:1200px){
+        width: 238px;
+        height: 557px;
+    }
+}
+
+.box:nth-child(2){
+    z-index: 2;
+    
+    @media screen and (max-width:767px){
+        left: 36px;
+        bottom: 75px;
+        
+
+    }
+    @media screen and (min-width:768px){
+        bottom: 40px;
+        left: 248px;
+    }
+}
+.box:nth-child(4){
+    z-index:-1;
+    @media screen and (min-width:768px){
+        z-index: 4;
+        bottom: 16px;
+        left: 32px;
+    }
+
+}
+.box:nth-child(5){
+    z-index: -1;
+    @media screen and (min-width:768px){
+        z-index: 3;
+        bottom: 0px;
+        right: 32px;
+    }
+    
+}
+.box:nth-child(6){
+    z-index: -1;
+    @media screen and (min-width:768px){
+        z-index: 3;
+        bottom: 221px;
+        right: 32px;
+    }
+    
+}
+
+
+.milk{
+    display: inline-flex;
+    gap: 1px;
+    align-items: center;
+}
+
+.milk-title-box{
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+.milk-title{
+    width: 114px;
+    margin: 0;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 8px;
+    line-height: 1.5;             
+
+    color: #FFFFFF;
+}
+.hero__title{
+    /* margin: 0; */
+    width: 218px;
+    @media screen and (min-width:768px){
+        width: 162px;
+        height: 80px;
+        margin-bottom: 20px;
+    }
+    
+}
+
+.wite-text{
+    font-family: 'Titan One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 1.15;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+    @media screen and (min-width:768px){
+        font-size: 22px;
+        line-height: 1.15;
+    }
+    
+}
+.red-text{
+    font-family: 'Titan One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 0.96;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+
+    color: #D41443;
+    @media screen and (min-width:768px){
+        font-size: 34px;
+        line-height: 0.9;
+    }
+}
+
+.hero__button{
+    margin-top: 20px;
+    align-items: center;
+    text-align: center;
+
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 8px;
+    line-height: 1.25;
+    @media screen and (min-width:768px){
+        margin-top: 0px;
+    } 
+ 
+}
+.red-btn{
+    width: 62.4px;
+    height: 24px;
+    background: #D41443;
+    border-radius: 20px;
+    border: none;
+    color: #FFFFFF;
+}
+
+.wite-btn{
+    width: 82.8px;
+    height: 24px;
+    background: #FFFFFF;
+    border-radius: 20px;
+    color: rgba(212, 20, 67, 1);
+    border: none;
+}
+
+.number-numbers{
+    font-family: 'Titan One';    
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 1.14;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+
+    color: #D41443;
+}
+.number-title{
+    font-family: 'DM Sans';    
+    font-weight: 400;
+    font-size: 8px;
+    line-height: 1.25;  
+    
+    color: #FFFFFF;
+}
+.numbers-blok{
+    list-style-type: none;
+}
+.numbers{
+    gap: 17px;
+}
