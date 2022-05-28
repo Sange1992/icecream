@@ -1,0 +1,69 @@
+
+
+// против скрола во время открытых окон
+
+// body.modal-open {
+//   overflow: hidden;
+// }
+
+// body.is-open {
+//   overflow: hidden;
+// }
+
+// Плавная прокрутка по ссылке к якорю
+
+html {
+  scroll-behavior: smooth;
+}
+
+body::after,
+body::before {
+    box-sizing: border-box;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+ul,
+ol {
+    margin: 0;
+    padding-left: 0;
+    list-style: none
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+button {
+    display: block;
+    border: none;
+    cursor: pointer;
+}
+
+a {
+    outline: none;
+    text-decoration: none;
+}
+
+/* Как правильно сделать элемент невидимым. Сейчас можно заменять на appearance: none; */
+
+.title-invisible {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
