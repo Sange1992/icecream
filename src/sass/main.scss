@@ -5,10 +5,11 @@
 @import './utils/mixins';
 @import './utils/hidden';
 // -------------------------components
+@import './components/button-modal';
 @import './components/container';
 @import './components/mob-menu';
 @import './components/modal-menu';
-@import './components/_button-modal';
+
 // -------------------------layou
 @import './layout/header';
 @import './layout/hero';
