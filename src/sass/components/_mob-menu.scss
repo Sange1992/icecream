@@ -10,8 +10,17 @@
     background-color: var(--bg-color-burger);
 
     z-index: 9998;
-
+    
     overflow: auto;
+    
+    transform: translate(0, 0);
+    transition: transform var(--timing-duration) var(--timing-function);
+      
+}
+
+.mob-menu.is-hidden {    
+    transform: translate(100%, 0);
+    transition: transform var(--timing-duration) var(--timing-function);
 }
 
 .menu-btn-close {
@@ -23,10 +32,19 @@
 
     background-color: transparent;
 
+    fill: var(--btn-color2);
+
+    transition: fill var(--timing-duration) var(--timing-function);
+    
+    &:hover,
+    &:focus {
+        fill: var(--btn-color1);
+    }
 }
 
 .mob-menu__btn {
     min-width: 209px;
+
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 32px;
