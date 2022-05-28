@@ -1,5 +1,5 @@
 .gallery {
-    background: linear-gradient(to bottom, #FFF5F6 40%, #fff 60%);
+    background: linear-gradient(to bottom, var(--bg-color3) 40%, var(--bg-color2) 60%);
     // padding: 0 15px;
     // margin-bottom: 50px;
     
@@ -32,11 +32,10 @@
 
 .gallery-list__img {
     border-radius: 15%;
-    width: 100%;
+    width: auto;
     height: auto;
-    object-fit: cover;
+    // object-fit: cover;
 }
-
 
 .box1 {
     grid-column-start: 1;
