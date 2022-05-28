@@ -238,7 +238,12 @@ body{
 }
 .numbers-blok{
     list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
 }
 .numbers{
+    
     gap: 17px;
 }
+
