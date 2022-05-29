@@ -1,0 +1,17 @@
+.header {
+    background-color: var(--bg-color1);
+}
+.header-box {
+    padding: 8px 0;
+    display: flex;
+    justify-content: center;
+}
+.header-box__btn {
+    display: block;
+    margin-left: auto;
+    background-color: inherit;
+}
+.header-box__icon {
+    width: 20px;
+    height: 20px;
+}
