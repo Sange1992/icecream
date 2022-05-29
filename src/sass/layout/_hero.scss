@@ -30,7 +30,7 @@ body{
 
 .hero-blok{
     position: relative;    
-    width: 320px;
+    /* width: 320px; */
     min-height: 444px;
     background-size: cover;
     background-color: #FFB8CA;
@@ -45,6 +45,22 @@ body{
     @media screen and (min-width:1280px){
         width: 1280px;
         height: 664px;
+    }
+}
+.hero-fone:before{
+    display: inline-block;
+    content: "";
+    width: 346px;
+    height: 344px;
+    border-radius: 50%;
+    background-color: #FFA5BA;
+    @media screen and (min-width:768px){
+        width: 335px;
+        height: 333px;
+    }
+    @media screen and (min-width:1280px){
+        width: 534px;
+        height: 534px;
     }
 }
 
@@ -74,7 +90,7 @@ body{
     
     @media screen and (max-width:767px){
         top: 34px;
-        left: 117px;
+        right: 32px;
         width: 171px;
         height: 410px;
         
@@ -97,8 +113,9 @@ body{
     z-index: 2;
     
     @media screen and (max-width:767px){
-        right: 0px;
-        bottom: 75px;       
+        right: -62px;
+        bottom: 75px;
+        left: 36px;       
     }
     @media screen and (min-width:768px){
         bottom: 40px;
