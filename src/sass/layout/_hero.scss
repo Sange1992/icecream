@@ -371,9 +371,27 @@ body{
         margin-bottom: 18px;
     }   
 }
-.arrov_img{
+.arrov-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    cursor: pointer;
     width: 18px;
     height: 18px;
-    color: #C7133E;
+    background-color: #ffffff;
+    @media screen and (min-width:1280px){
+        width: 26px;
+        height: 26px;
+    } 
 }
+.arrov_img{
+    width: 6px;
+    height: 7px;    
+    fill: #d41342;
+    @media screen and (min-width:1280px){
+        width: 10px;
+        height: 11px;
+    }
 
+}
