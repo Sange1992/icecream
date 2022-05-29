@@ -213,7 +213,13 @@
   height: 40px;
   background-color: var(--btn-color2);
   &.first-btn.is-cliked {
-    background-color: var(rgba(248, 140, 160, 1));
+    background-color: rgba(248, 140, 160, 1);
+  }
+  &.second-but.is-cliked {
+    background-color: rgba(232, 192, 134, 1);
+  }
+  &.third-but.is-cliked {
+    background-color: rgba(172, 209, 123, 1);
   }
   // &:hover,
   // &:focus {
@@ -226,6 +232,11 @@
 }
 .product-card__icon {
   fill: var(--btn-color1);
+  .first-btn.is-cliked &,
+  .second-but.is-cliked &,
+  .third-but.is-cliked & {
+    fill: var(--btn-color2);
+  }
 
   // .product-but:focus & {
   //   fill: var(--btn-hover-color1);

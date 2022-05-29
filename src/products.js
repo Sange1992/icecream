@@ -6,6 +6,8 @@
     closeDescriptionBtn: document.querySelector('[data-description-close]'),
     description: document.querySelector('.product-card__des.first-des'),
     btn1: document.querySelector('.first-btn'),
+    btn2: document.querySelector('.second-but'),
+    btn3: document.querySelector('.third-but'),
     description2: document.querySelector('.product-card__des.second-des'),
     description3: document.querySelector('.product-card__des.third-des'),
   };
@@ -21,8 +23,10 @@
   }
   function toggleDescription2() {
     refs.description2.classList.toggle('is-open');
+    refs.btn2.classList.toggle('is-cliked');
   }
   function toggleDescription3() {
     refs.description3.classList.toggle('is-open');
+    refs.btn3.classList.toggle('is-cliked');
   }
 })();
