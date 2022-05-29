@@ -254,7 +254,7 @@
   text-align: center;
   border-radius: 24px;
   overflow: scroll;
-  opacity: 0;
+
   &.first-des {
     background: rgba(248, 140, 160, 1);
   }
@@ -266,14 +266,11 @@
   }
 
   @media screen and(min-width:768px) {
-    padding-left: 32px;
-    padding-right: 32px;
     height: 150px;
   }
   @media screen and(min-width:1280px) {
     font-size: 16px;
-    padding-left: 77px;
-    padding-right: 77px;
+
     height: 106px;
   }
 }
