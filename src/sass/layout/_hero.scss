@@ -15,9 +15,7 @@
     @media screen and (min-width:1280px){
         min-width: 1280px;
         min-height: 664px;
-
-    } 
-    
+    }
 }
 
 .hero-button-blok{
@@ -44,13 +42,12 @@ body{
         width: 1280px;
         height: 664px;
     }
-  
 }
 
 .box{
-    position: absolute;
-    
+    position: absolute;  
 }
+
 .box:nth-child(1){
     z-index: 4;    
     @media screen and (max-width:767px){        
@@ -66,8 +63,8 @@ body{
         bottom: 316px;
         left: 16px;
     }
-
 }
+
 .box:nth-child(3){
     z-index: 3;
     
@@ -98,7 +95,6 @@ body{
     @media screen and (max-width:767px){
         left: 36px;
         bottom: 75px;       
-
     }
     @media screen and (min-width:768px){
         bottom: 40px;
@@ -109,6 +105,7 @@ body{
         left: 517px;
     }
 }
+
 .box:nth-child(4){
     z-index:-1;
     @media screen and (min-width:768px){
@@ -122,6 +119,7 @@ body{
     }
 
 }
+
 .box:nth-child(5){
     z-index: -1;
     @media screen and (min-width:768px){
@@ -136,6 +134,7 @@ body{
     }
     
 }
+
 .box:nth-child(6){
     z-index: -1;
     @media screen and (min-width:768px){
@@ -147,10 +146,8 @@ body{
         z-index: 3;
         bottom: 363px;
         right: 16px;
-    }
-    
+    }  
 }
-
 
 .milk{
     display: inline-flex;
@@ -166,6 +163,7 @@ body{
         gap: 20px;
     }
 }
+
 .milk-title{
     width: 114px;
     margin: 0;
@@ -182,6 +180,7 @@ body{
         width: 200px;
     }
 }
+
 .hero__title{
     /* margin: 0; */
     width: 218px;
@@ -194,8 +193,7 @@ body{
         width: 277px;
         height: 137px;
         margin-bottom: 24px;
-    }
-    
+    }  
 }
 
 .wite-text{
@@ -206,7 +204,6 @@ body{
     line-height: 1.15;
     letter-spacing: 0.04em;
     text-transform: uppercase;
-
     color: #FFFFFF;
     @media screen and (min-width:768px){
         font-size: 22px;
@@ -215,9 +212,9 @@ body{
     @media screen and (min-width:1280px){
         font-size: 38px;
         line-height: 1.15;
-    }
-    
+    }  
 }
+
 .red-text{
     font-family: 'Titan One';
     font-style: normal;
@@ -226,7 +223,6 @@ body{
     line-height: 0.96;
     letter-spacing: 0.04em;
     text-transform: uppercase;
-
     color: #D41443;
     @media screen and (min-width:768px){
         font-size: 34px;
@@ -255,8 +251,8 @@ body{
         font-size: 14px;
         line-height: 1.3;
     } 
- 
 }
+
 .red-btn{
     width: 62.4px;
     height: 24px;
@@ -290,7 +286,6 @@ body{
     line-height: 1.14;
     letter-spacing: 0.04em;
     text-transform: uppercase;
-
     color: #D41443;
     @media screen and (min-width:1280px){
         font-size: 46px;
@@ -298,12 +293,12 @@ body{
         letter-spacing: 0.04em;
     }
 }
+
 .number-title{
     font-family: 'DM Sans';    
     font-weight: 400;
     font-size: 8px;
     line-height: 1.25;  
-    
     color: #FFFFFF;
     @media screen and (min-width:1280px){        
         font-size: 14px;
