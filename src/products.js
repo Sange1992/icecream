@@ -24,17 +24,3 @@
     refs.description3.classList.toggle('is-open');
   }
 })();
-// (() => {
-//   const refs = {
-//     openDescription2Btn: document.querySelector('[data-description2-open]'),
-//     closeDescription2Btn: document.querySelector('[data-description2-close]'),
-//     description2: document.querySelector('[data-description2]'),
-//   };
-
-//   refs.openDescription2Btn.addEventListener('click', toggleDescription2);
-//   refs.closeDescription2Btn.addEventListener('click', toggleDescription2);
-
-//   function toggleDescription2() {
-//     refs.description2.classList.toggle('is-open2');
-//   }
-// })();

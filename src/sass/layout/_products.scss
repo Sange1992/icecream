@@ -15,7 +15,14 @@
     justify-content: center;
   }
 }
+// .products__item .is-open {
+//   border-radius: 24px;
+//   transform: rotateY(90deg);
+//   animation: rotateY 3000ms 1 alternate forwards ease-in-out 1000ms;
+// }
 .products__item {
+  // transform: rotateY(180deg);
+  // animation: rotateY 3000ms infinite alternate backwards ease-in-out 1000ms;
   height: 637px;
   width: 280px;
   margin-left: auto;
@@ -41,6 +48,15 @@
     }
   }
 }
+// @keyframes rotateY {
+//   0% {
+//     transform: perspective(600px) rotateY(0deg);
+//   }
+
+//   100% {
+//     transform: perspective(600px) rotateY(180deg);
+//   }
+// }
 
 .products__label {
   display: block;
