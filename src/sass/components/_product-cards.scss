@@ -236,6 +236,7 @@
   .second-but.is-cliked &,
   .third-but.is-cliked & {
     fill: var(--btn-color2);
+    transform: rotate(180deg);
   }
 
   // .product-but:focus & {
