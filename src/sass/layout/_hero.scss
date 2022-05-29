@@ -261,7 +261,9 @@ body{
     margin-top: 20px;
     align-items: center;
     text-align: center;
-
+    display: flex;
+    justify-content: space-around;
+    cursor: pointer;
     font-family: 'DM Sans';
     font-style: normal;
     font-weight: 400;
@@ -287,6 +289,10 @@ body{
         width: 107px;
         height: 40px;
     }
+    &:hover{
+        background: #C7133E;
+        color: #FFFFFF;
+    }
 }
 
 .wite-btn{
@@ -299,6 +305,10 @@ body{
     @media screen and (min-width:1280px){
         width: 138px;
         height: 40px;
+    }
+    &:hover{
+        background: #ECEBEB;
+        color:rgba(212, 20, 67, 1);
     }
 }
 
