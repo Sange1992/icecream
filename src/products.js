@@ -17,6 +17,7 @@
 
   function toggleDescription() {
     refs.description.classList.toggle('is-open');
+    refs.btn1.classList.toggle('is-cliked');
   }
   function toggleDescription2() {
     refs.description2.classList.toggle('is-open');
