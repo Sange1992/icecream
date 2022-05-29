@@ -34,6 +34,10 @@ body{
     min-height: 444px;
     background-size: cover;
     background-color: #FFB8CA;
+    @media screen and (max-width:768px){
+        display: block;
+        margin-right: 0;
+    }
     @media screen and (min-width:768px){
         width: 768px;
         height: 416px;
@@ -93,7 +97,7 @@ body{
     z-index: 2;
     
     @media screen and (max-width:767px){
-        left: 36px;
+        right: 0px;
         bottom: 75px;       
     }
     @media screen and (min-width:768px){
