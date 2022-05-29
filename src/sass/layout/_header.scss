@@ -1,0 +1,20 @@
+.header {
+    // position: absolute;
+    // z-index: 4;
+    background-color: var(--bg-color1);
+}
+.header-box {
+    padding: 8px 0;
+    display: flex;
+    justify-content: center;
+}
+.header-box__btn {
+    display: block;
+    margin-left: auto;
+    background-color: inherit;
+}
+.header-box__icon {
+    display: block;
+    width: 20px;
+    height: 20px;
+}
