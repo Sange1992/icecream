@@ -44,11 +44,11 @@ body{
     }
 }
 
-.box{
+.hero-box{
     position: absolute;  
 }
 
-.box:nth-child(1){
+.hero-box:nth-child(1){
     z-index: 4;    
     @media screen and (max-width:767px){        
         left: 20px;
@@ -65,7 +65,7 @@ body{
     }
 }
 
-.box:nth-child(3){
+.hero-box:nth-child(3){
     z-index: 3;
     
     @media screen and (max-width:767px){
@@ -89,7 +89,7 @@ body{
     }
 }
 
-.box:nth-child(2){
+.hero-box:nth-child(2){
     z-index: 2;
     
     @media screen and (max-width:767px){
@@ -106,7 +106,7 @@ body{
     }
 }
 
-.box:nth-child(4){
+.hero-box:nth-child(4){
     z-index:-1;
     @media screen and (min-width:768px){
         z-index: 4;
@@ -120,7 +120,7 @@ body{
 
 }
 
-.box:nth-child(5){
+.hero-box:nth-child(5){
     z-index: -1;
     @media screen and (min-width:768px){
         z-index: 3;
@@ -135,7 +135,7 @@ body{
     
 }
 
-.box:nth-child(6){
+.hero-box:nth-child(6){
     z-index: -1;
     @media screen and (min-width:768px){
         z-index: 3;
