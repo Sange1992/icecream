@@ -14,8 +14,7 @@
     overflow: auto;
     
     transform: translate(0, 0);
-    transition: transform var(--timing-duration) var(--timing-function);
-      
+    transition: transform var(--timing-duration) var(--timing-function);      
 }
 
 .mob-menu.is-hidden {    
