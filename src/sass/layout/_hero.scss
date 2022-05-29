@@ -2,7 +2,7 @@
     /* display: flex;  */
    
     background-color: #FFB8CA;
-    @media screen and (max-width:767px){
+    @media screen and (min-width:767px){
         /* min-width: 320px;
         min-height: 444px;
         justify-content: center; */
@@ -31,9 +31,9 @@ body{
 .hero-blok{
     position: relative;    
     /* width: 320px; */
-    min-height: 444px;
+    height: 444px;
     background-size: cover;
-    background-color: #FFB8CA;
+    background-color: #FFB8CA;    
     @media screen and (max-width:768px){
         display: block;
         margin-right: 0;
@@ -47,7 +47,7 @@ body{
         height: 664px;
     }
 }
-.hero-fone:before{
+.hero-fone{
     display: inline-block;
     content: "";
     width: 346px;
