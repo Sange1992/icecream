@@ -153,6 +153,7 @@
   &.third-card.is-selected {
     box-shadow: 10px 10px 8px 2px rgba(172, 209, 123, 0.3);
   }
+  transition: box-shadow var(--timing-duration) var(--timing-function);
 }
 
 .product-card__title {
