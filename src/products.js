@@ -5,6 +5,7 @@
     openDescriptionBtn3: document.querySelector('.third-but'),
     closeDescriptionBtn: document.querySelector('[data-description-close]'),
     description: document.querySelector('.product-card__des.first-des'),
+    btn1: document.querySelector('.first-btn'),
     description2: document.querySelector('.product-card__des.second-des'),
     description3: document.querySelector('.product-card__des.third-des'),
   };
