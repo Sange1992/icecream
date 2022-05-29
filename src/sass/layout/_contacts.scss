@@ -50,6 +50,15 @@
     text-align: center;
     letter-spacing: 0.04em;
     margin-bottom: 20px;
+    @media screen and (min-width: 768px) {
+      width: 73px;
+      height: 28px;
+      font-size: 16px;
+      line-height: 186%;
+    }
+    @media screen and (min-width: 1280px) {
+      width: 75px;
+    }
   }
   &__ft-type {
     width: 130px;
@@ -63,6 +72,12 @@
     text-align: center;
     letter-spacing: 0.04em;
     margin-bottom: 20px;
+    @media screen and (min-width: 768px) {
+      width: 138px;
+      height: 28px;
+      font-size: 16px;
+      line-height: 186%;
+    }
   }
   &__city {
     font-weight: 500;
@@ -71,24 +86,50 @@
     letter-spacing: 0.04em;
     color: #000000;
     margin-bottom: 8px;
+    @media screen and (min-width: 768px) {
+      font-size: 14px;
+    }
+    @media screen and (min-width: 1280px) {
+      font-size: 16px;
+    }
   }
   &__city-description {
     font-weight: 500;
     font-size: 12px;
     line-height: 150%;
     color: #907e82;
+    @media screen and (min-width: 768px) {
+      font-size: 14px;
+      line-height: 166%;
+    }
+    @media screen and (min-width: 1280px) {
+      font-size: 16px;
+      line-height: 183%;
+    }
   }
   &__open-days {
     font-weight: 500;
     font-size: 12px;
     line-height: 186%;
     color: #000000;
+    @media screen and (min-width: 768px) {
+      font-size: 14px;
+    }
+    @media screen and (min-width: 1280px) {
+      font-size: 16px;
+    }
   }
   &__open-hours {
     font-weight: 500;
     font-size: 12px;
     line-height: 186%;
     color: #ffa5ba;
+    @media screen and (min-width: 768px) {
+      font-size: 14px;
+    }
+    @media screen and (min-width: 1280px) {
+      font-size: 16px;
+    }
   }
   &__open-hours + &__open-days {
     margin-top: 8px;
@@ -100,6 +141,13 @@
     font-size: 12px;
     line-height: 150%;
     color: #907e82;
+    @media screen and (min-width: 768px) {
+      font-size: 14px;
+      line-height: 183%;
+    }
+    @media screen and (min-width: 1280px) {
+      font-size: 16px;
+    }
   }
   &__item-list-top {
     padding-bottom: 24px;
@@ -119,7 +167,7 @@
   border: none;
   width: 161.45px;
   height: 44px;
-  background: #d41342;
+  background: #d41443;
   border-radius: 22px;
   font-weight: 700;
   font-size: 16px;
@@ -128,9 +176,17 @@
   text-align: center;
   color: #ffffff;
   margin-bottom: 10px;
+  &:hover,
+  &:focus {
+    background: #c7133e;
+  }
   @media screen and (min-width: 768px) {
     margin-bottom: 0px;
     margin-right: 15px;
+    width: 191px;
+  }
+  @media screen and (min-width: 1280px) {
+    width: 198px;
   }
 }
 .contacts-button-white {
@@ -149,6 +205,12 @@
   &:hover,
   &:focus {
     background: #ecebeb;
+  }
+  @media screen and (min-width: 768px) {
+    width: 174px;
+  }
+  @media screen and (min-width: 1280px) {
+    width: 180px;
   }
 }
 .contacts-button-icon {
@@ -169,5 +231,9 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
+    margin-top: 40px;
+  }
+  @media screen and (min-width: 1280px) {
+    margin-top: 60px;
   }
 }
