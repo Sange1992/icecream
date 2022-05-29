@@ -1,6 +1,7 @@
 .mob-menu {
     position: fixed;
     top: 0;
+    left: 0;
 
     width: 100vw;
     height: 100vh;
@@ -10,11 +11,13 @@
     background-color: var(--bg-color-burger);
 
     z-index: 9998;
+    opacity:1;
+    overflow: hidden;
 
-    overflow: auto;
-
-    transform: translate(0, 0);
-    transition: transform var(--timing-duration) var(--timing-function);
+    transform: translateX(0);
+    transition: transform var(--timing-duration) var(--timing-function),
+                opacity var(--timing-duration) var(--timing-function),
+                visibility var(--timing-duration) var(--timing-function);    
 
     .container {
         display: flex;
@@ -24,8 +27,7 @@
 }
 
 .mob-menu.is-hidden {
-    transform: translate(100%, 0);
-    transition: transform var(--timing-duration) var(--timing-function);
+    transform: translateX(100%);    
 }
 
 .menu-btn-close {
@@ -36,14 +38,16 @@
     padding: 0;
 
     background-color: transparent;
+}
 
-    fill: var(--btn-color2);
+.menu-btn-close__icon {
 
-    transition: fill var(--timing-duration) var(--timing-function);
+    stroke: var(--btn-color2);
+    transition: stroke var(--timing-duration) var(--timing-function);
 
     &:hover,
     &:focus {
-        fill: var(--btn-color1);
+        stroke: var(--btn-color1);        
     }
 }
 
@@ -80,9 +84,10 @@
     line-height: 1.29;
 
     color: var(--main-font-color);
+    transition: color var(--timing-duration) var(--timing-function);
 
     &:hover,
     &:focus {
-        color: var(--accent-font-color);
+        color: var(--accent-font-color);        
     }
 }
