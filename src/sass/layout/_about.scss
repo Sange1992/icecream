@@ -7,7 +7,7 @@
   @media screen and (max-width: 767px) {
     background-repeat: no-repeat;
     background-size: contain;
-
+    background-position: 0% 78%;
     background-image: url(../images/milk-320.png);
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
       background-image: url(../images/milk-640.png);
@@ -21,7 +21,7 @@
     }
     background-repeat: no-repeat;
     background-size: contain;
-    background-position: 0% 75%;
+    background-position: center;
     width: auto;
     max-width: 1280px;
   }
