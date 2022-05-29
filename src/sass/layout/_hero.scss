@@ -14,8 +14,8 @@
 
     } 
     @media screen and (min-width:1280px){
-        min-width: 1280px;
-        min-height: 664px;
+       /*  min-width: 1280px;
+        min-height: 664px; */
     }
 }
 
@@ -44,8 +44,8 @@ body{
         height: 334px;
     }
     @media screen and (min-width:1280px){
-        width: 1280px;
-        height: 664px;
+        
+        height: 580px;
     }
 }
 
@@ -371,5 +371,9 @@ body{
         margin-bottom: 18px;
     }   
 }
-
+.arrov_img{
+    width: 18px;
+    height: 18px;
+    color: #C7133E;
+}
 
