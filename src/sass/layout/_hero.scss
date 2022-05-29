@@ -48,11 +48,11 @@ body{
     }
 }
 .hero-fone{
-    display: inline-block;
+    display: inline-flex;
     content: "";
     width: 346px;
     height: 344px;
-    left: 36px;
+    /* left: 36px; */
     top: 83px;
     border-radius: 50%;
     background-color: #FFA5BA;
@@ -117,7 +117,7 @@ body{
     @media screen and (max-width:767px){
         right: -62px;
         bottom: 75px;
-        left: 36px;       
+               
     }
     @media screen and (min-width:768px){
         bottom: 40px;
