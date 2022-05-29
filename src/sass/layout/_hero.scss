@@ -29,14 +29,14 @@ body{
 
 
 .hero-blok{
-    position: relative;    
+    /* position: relative;    */ 
     /* width: 320px; */
     height: 444px;
-    background-size: cover;
-    background-color: #FFB8CA;    
+   /*  background-size: cover;
+    background-color: #FFB8CA;  */   
     @media screen and (max-width:768px){
-        display: block;
-        margin-right: 0;
+        /* display: block; */
+        /* margin-right: 0; */
     }
     @media screen and (min-width:768px){
         width: 768px;
@@ -52,6 +52,8 @@ body{
     content: "";
     width: 346px;
     height: 344px;
+    left: 36px;
+    top: 83px;
     border-radius: 50%;
     background-color: #FFA5BA;
     @media screen and (min-width:768px){
