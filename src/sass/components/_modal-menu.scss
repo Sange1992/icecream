@@ -1,5 +1,5 @@
 .backdrop{
-    z-index: 5;
+    z-index: 9999;
     position: fixed ;
     top: 0;
     width: 100%;
@@ -210,7 +210,7 @@
 }
 
 .test{
-    @media screen and (min-width: 1px) and (max-width: 390px) {
+    @media screen and (min-width: 1px) and (max-width: 480px) {
         display: none;
     }
 }
