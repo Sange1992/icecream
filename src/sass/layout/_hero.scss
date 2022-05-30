@@ -242,7 +242,7 @@
     }
 }
 
-.arrov-btn {
+.milk-content__btn {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -252,22 +252,21 @@
     height: 18px;
     background-color: var(--bg-color2);
 
-    @media screen and (min-width:1280px) {
+    @include desktop {
         width: 26px;
         height: 26px;
     }
 }
 
-.arrov_img {
+.milk-content__img {
     width: 6px;
     height: 7px;
     fill: var(--accent-font-color);
 
-    @media screen and (min-width:1280px) {
+    @include desktop {
         width: 10px;
         height: 11px;
     }
-
 }
 
 .hero-img-tasty {
