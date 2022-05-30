@@ -1,7 +1,17 @@
-.mob-menu {
+.overlay {
+    z-index: 5;
     position: fixed;
     top: 0;
-    
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.2);
+    transition: opacity var(--timing-duration) var(--timing-function),
+                visibility var(--timing-duration) var(--timing-function);
+}
+
+.mob-menu {
+    position: fixed;
+    top: 0;    
 
     width: 100vw;
     height: 100vh;
@@ -11,41 +21,37 @@
     background-color: var(--bg-color-burger);
 
     z-index: 9998;
-    opacity:0.8;
+
+    opacity:1;
     overflow: hidden;
 
     transform: translateX(0);
-    transition: transform var(--timing-duration) var(--timing-function),
-                opacity var(--timing-duration) var(--timing-function),
-                visibility var(--timing-duration) var(--timing-function);    
+    transition: transform var(--timing-duration) var(--timing-function);    
 
     .container {
         display: flex;
         flex-direction: column;
-        align-items: center;
-        
+        align-items: center;        
 
         padding-left: 0;
         padding-right: 0;
     }
 
     @include tablet {
-        width: calc((100vw - 62px) / 2.7);
+        width: calc((100% - 64px) / 2.65);
         right: 0;
 
         .container {
-            width: calc((100vw - 62px) / 2.7);
-            padding-left: 0;
-            padding-right: 0;
+            width: calc((100vw - 64px) / 2.65);
         }
     }
 
-        @include desktop {
-            display: none;
-        }
+    @include desktop {
+        display: none;
+    }
 }
 
-.mob-menu.is-hidden {
+.overlay.is-hidden .mob-menu{
     transform: translateX(100%);    
 }
 
@@ -101,9 +107,8 @@
 
 .mob-menu-list__item {
     &:nth-child(2n+1) {
-        border-top: 1px solid #ffff;
-        border-bottom: 1px solid #ffff;
-        /* #E18298 */
+        border-top: 1px solid #E18298;
+        border-bottom: 1px solid #E18298;        
     }
 }
 
