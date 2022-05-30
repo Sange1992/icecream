@@ -43,20 +43,18 @@
     padding-top: 261px;
     height: 796px;
     width: 395px;
+    &.animated {
+      transform: rotateY(0deg);
+      animation: rotateY 3000ms infinite alternate none ease-in-out 1000ms;
+    }
     &:not(:last-child) {
       margin-right: 32px;
     }
   }
+  &:hover {
+    animation-name: none;
+  }
 }
-// @keyframes rotateY {
-//   0% {
-//     transform: perspective(600px) rotateY(0deg);
-//   }
-
-//   100% {
-//     transform: perspective(600px) rotateY(180deg);
-//   }
-// }
 
 .products__label {
   display: block;

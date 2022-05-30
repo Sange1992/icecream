@@ -184,7 +184,6 @@
     font-size: 16px;
     padding-left: 77px;
     padding-right: 77px;
-    // width: 241px;
     height: 106px;
   }
 }
@@ -202,11 +201,14 @@
   &.first-btn.is-cliked {
     background-color: var(--des-bg-product1);
   }
-  &.second-but.is-cliked {
+  &.second-btn.is-cliked {
     background-color: var(--des-bg-product2);
   }
-  &.third-but.is-cliked {
+  &.third-btn.is-cliked {
     background-color: var(--des-bg-product3);
+  }
+  &:focus {
+    animation-name: none;
   }
 }
 .product-card__icon {
@@ -215,8 +217,8 @@
     fill var(--timing-duration) var(--timing-function);
 
   .first-btn.is-cliked &,
-  .second-but.is-cliked &,
-  .third-but.is-cliked & {
+  .second-btn.is-cliked &,
+  .third-btn.is-cliked & {
     fill: var(--btn-color2);
     transform: rotate(180deg);
   }
