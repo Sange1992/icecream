@@ -124,13 +124,13 @@
     }
   }
   &.first-card.is-selected {
-    box-shadow: 10px 10px 8px 2px rgba(248, 140, 160, 0.3);
+    box-shadow: 10px 10px 8px 2px var(--shadow-product1);
   }
   &.second-card.is-selected {
-    box-shadow: 10px 10px 8px 2px rgba(232, 192, 134, 0.3);
+    box-shadow: 10px 10px 8px 2px var(--shadow-product2);
   }
   &.third-card.is-selected {
-    box-shadow: 10px 10px 8px 2px rgba(172, 209, 123, 0.3);
+    box-shadow: 10px 10px 8px 2px var(--shadow-product3);
   }
   transition: box-shadow var(--timing-duration) var(--timing-function);
 }
@@ -166,8 +166,6 @@
   width: 100%;
   padding-left: 40px;
   padding-right: 40px;
-  // width: 200px;
-  // height: 124px;
   text-align: center;
   margin-bottom: 32px;
   font-weight: 700;
@@ -179,7 +177,6 @@
     line-height: 1.76;
     padding-left: 32px;
     padding-right: 32px;
-    // width: 160px;
     height: 150px;
   }
   @include desktop {
@@ -203,23 +200,14 @@
   height: 40px;
   background-color: var(--btn-color2);
   &.first-btn.is-cliked {
-    background-color: rgba(248, 140, 160, 1);
+    background-color: var(--des-bg-product1);
   }
   &.second-but.is-cliked {
-    background-color: rgba(232, 192, 134, 1);
+    background-color: var(--des-bg-product2);
   }
   &.third-but.is-cliked {
-    background-color: rgba(172, 209, 123, 1);
+    background-color: var(--des-bg-product3);
   }
-
-  // &:hover,
-  // &:focus {
-  //   background-color: var(--btn-hover-color2);
-  // }
-  // &:hover .product-card__des {
-  //   opacity: 1;
-  //   transform: translateY(0);
-  // }
 }
 .product-card__icon {
   fill: var(--btn-color1);
@@ -232,13 +220,6 @@
     fill: var(--btn-color2);
     transform: rotate(180deg);
   }
-
-  // .product-but:focus & {
-  //   fill: var(--btn-hover-color1);
-  // }
-  // .product-but:hover & {
-  //   fill: var(--btn-hover-color1);
-  // }
 }
 .prouct-card__tumb {
   overflow: hidden;
@@ -265,13 +246,13 @@
   overflow: auto;
 
   &.first-des {
-    background: rgba(248, 140, 160, 1);
+    background: var(--des-bg-product1);
   }
   &.second-des {
-    background: rgba(232, 192, 134, 1);
+    background: var(--des-bg-product2);
   }
   &.third-des {
-    background: rgba(172, 209, 123, 1);
+    background: var(--des-bg-product3);
   }
 
   @include tablet {
@@ -281,10 +262,6 @@
     height: 106px;
   }
 }
-// .product-card:hover .product-card__des {
-//   opacity: 1;
-//   transform: translatex(0);
-// }
 
 .product-card__des.is-open {
   opacity: 1;

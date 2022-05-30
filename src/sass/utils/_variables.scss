@@ -20,10 +20,16 @@
 /* цвет ховера кнопки 1 #C7133E */
 /* цвет ховера кнопки 2 #ECEBEB */
 
-/* timing-duration и timing-function - для ховера и фокуса */ 
+/* timing-duration и timing-function - для ховера и фокуса */
+
+/* цвет фона описания продукта 1 #f88ca0 */
+/* цвет фона описания продукта 2 #e8c086 */
+/* цвет фона описания продукта 3 #acd17b */
+/* цвет тени карточки продукта 1 #fddde3 */
+/* цвет тени карточки продукта 2 #F0D1A5 */
+/* цвет тени карточки продукта 3 #e6f1d7 */
 
 /* Переменные */
-
 
 :root {
   --bg-color1: #ffb8ca;
@@ -52,4 +58,11 @@
 
   --timing-duration: 300ms;
   --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  --des-bg-product1: #f88ca0;
+  --des-bg-product2: #e8c086;
+  --des-bg-product3: #acd17b;
+  --shadow-product1: #fddde3;
+  --shadow-product2: #f8ecdb;
+  --shadow-product3: #e6f1d7;
 }
