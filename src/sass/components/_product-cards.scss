@@ -5,12 +5,12 @@
   padding-bottom: 40px;
   width: 280px;
   height: 489px;
-  @media screen and(min-width:768px) {
+  @include tablet {
     padding-top: 118px;
     height: 473px;
     width: 224px;
   }
-  @media screen and(min-width:1280px) {
+  @include desktop {
     padding-bottom: 60px;
     padding-top: 165px;
     height: 535px;
@@ -31,29 +31,23 @@
       background-repeat: no-repeat;
       background-position: center;
       background-size: cover;
-      @media screen and (min-device-pixel-ratio: 2),
-        screen and (min-resolution: 192dpi),
-        screen and (min-resolution: 2dppx) {
+      @include retina {
         background-image: url(../images/product1-560.png);
       }
 
-      @media screen and(min-width:768px) {
+      @include tablet {
         width: 224px;
         height: 224px;
         background-image: url(../images/product1-224.png);
-        @media screen and (min-device-pixel-ratio: 2),
-          screen and (min-resolution: 192dpi),
-          screen and (min-resolution: 2dppx) {
+        @include retina {
           background-image: url(../images/product1-448.png);
         }
       }
-      @media screen and(min-width:1280px) {
+      @include desktop {
         width: 394px;
         height: 394px;
         background-image: url(../images/product1-394.png);
-        @media screen and (min-device-pixel-ratio: 2),
-          screen and (min-resolution: 192dpi),
-          screen and (min-resolution: 2dppx) {
+        @include retina {
           background-image: url(../images/product1-788.png);
         }
       }
@@ -72,29 +66,23 @@
       background-repeat: no-repeat;
       background-position: center;
       background-size: cover;
-      @media screen and (min-device-pixel-ratio: 2),
-        screen and (min-resolution: 192dpi),
-        screen and (min-resolution: 2dppx) {
+      @include retina {
         background-image: url(../images/product2-560.png);
       }
 
-      @media screen and(min-width:768px) {
+      @include tablet {
         width: 224px;
         height: 224px;
         background-image: url(../images/product2-224.png);
-        @media screen and (min-device-pixel-ratio: 2),
-          screen and (min-resolution: 192dpi),
-          screen and (min-resolution: 2dppx) {
+        @include retina {
           background-image: url(../images/product2-448.png);
         }
       }
-      @media screen and(min-width:1280px) {
+      @include desktop {
         width: 394px;
         height: 394px;
         background-image: url(../images/product2-394.png);
-        @media screen and (min-device-pixel-ratio: 2),
-          screen and (min-resolution: 192dpi),
-          screen and (min-resolution: 2dppx) {
+        @include retina {
           background-image: url(../images/product2-788.png);
         }
       }
@@ -113,29 +101,23 @@
       background-repeat: no-repeat;
       background-position: center;
       background-size: cover;
-      @media screen and (min-device-pixel-ratio: 2),
-        screen and (min-resolution: 192dpi),
-        screen and (min-resolution: 2dppx) {
+      @include retina {
         background-image: url(../images/product3-560.png);
       }
 
-      @media screen and(min-width:768px) {
+      @include tablet {
         width: 224px;
         height: 224px;
         background-image: url(../images/product3-224.png);
-        @media screen and (min-device-pixel-ratio: 2),
-          screen and (min-resolution: 192dpi),
-          screen and (min-resolution: 2dppx) {
+        @include retina {
           background-image: url(../images/product3-448.png);
         }
       }
-      @media screen and(min-width:1280px) {
+      @include desktop {
         width: 394px;
         height: 394px;
         background-image: url(../images/product3-394.png);
-        @media screen and (min-device-pixel-ratio: 2),
-          screen and (min-resolution: 192dpi),
-          screen and (min-resolution: 2dppx) {
+        @include retina {
           background-image: url(../images/product3-788.png);
         }
       }
@@ -159,7 +141,7 @@
   line-height: 1.15;
   text-align: center;
   color: var(--title-font-color3);
-  @media screen and(min-width:1280px) {
+  @include desktop {
     font-size: 30px;
     line-height: 1.13;
   }
@@ -193,14 +175,14 @@
   line-height: 1.52;
   letter-spacing: 0.04em;
   color: var(--title-font-color3);
-  @media screen and(min-width:768px) {
+  @include tablet {
     line-height: 1.76;
     padding-left: 32px;
     padding-right: 32px;
     // width: 160px;
     height: 150px;
   }
-  @media screen and(min-width:1280px) {
+  @include desktop {
     margin-bottom: 60px;
     font-size: 16px;
     padding-left: 77px;
@@ -292,10 +274,10 @@
     background: rgba(172, 209, 123, 1);
   }
 
-  @media screen and(min-width:768px) {
+  @include tablet {
     height: 150px;
   }
-  @media screen and(min-width:1280px) {
+  @include desktop {
     height: 106px;
   }
 }
