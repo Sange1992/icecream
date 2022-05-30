@@ -26,14 +26,6 @@
         width: 100%;
     }
 
-    @include mobile{
-        width: 95%;
-    }
-
-    @include tablet{
-        width: 100%;
-    }
-
     @include desktop{
         max-width: 528px;
         height: 581px;
@@ -172,6 +164,7 @@
     line-height: 1.17;
     letter-spacing: 0.03em;
     color: #757575;
+
     @include desktop{
         font-size: 14px;
         line-height: 1.71;
@@ -214,4 +207,10 @@
     border-radius: 4px;
     padding: 10px 32px;
     min-width: 200px;
+}
+
+.test{
+    @media screen and (min-width: 1px) and (max-width: 390px) {
+        display: none;
+    }
 }
