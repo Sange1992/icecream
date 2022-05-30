@@ -22,6 +22,7 @@
 .hero-button-blok{
     display: flex;
     gap: 8px;
+    
 }
 
 body{
@@ -32,6 +33,7 @@ body{
 .hero-blok{
     /* position: relative;    */ 
     /* width: 320px; */
+    overflow: hidden;
     height: 444px;
    /*  background-size: cover;
     background-color: #FFB8CA;  */   
@@ -118,7 +120,6 @@ body{
     z-index: 2;
     
     @media screen and (max-width:767px){
-        /* right: -62px; */
         bottom: 75px;
                
     }
