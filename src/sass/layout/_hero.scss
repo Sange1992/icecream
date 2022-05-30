@@ -38,6 +38,7 @@ body{
     @media screen and (max-width:768px){
         /* display: block; */
         /* margin-right: 0; */
+        
     }
     @media screen and (min-width:768px){
         /* width: 768px; */
@@ -50,11 +51,11 @@ body{
 }
 
 .hero-fone{
-    display: flex;
+    
     content: "";
     width: 346px;
     height: 344px;
-    /* left: 36px; */
+    left: 36px;
     bottom: 75px;
     border-radius: 50%;
     background-color: #FFA5BA;
@@ -117,7 +118,7 @@ body{
     z-index: 2;
     
     @media screen and (max-width:767px){
-        right: -62px;
+        /* right: -62px; */
         bottom: 75px;
                
     }
