@@ -33,13 +33,14 @@ body{
 .hero-blok{
     /* position: relative;    */ 
     /* width: 320px; */
-    overflow: hidden;
+    
     height: 444px;
    /*  background-size: cover;
     background-color: #FFB8CA;  */   
     @media screen and (max-width:768px){
         /* display: block; */
         /* margin-right: 0; */
+        overflow: hidden;
         
     }
     @media screen and (min-width:768px){
