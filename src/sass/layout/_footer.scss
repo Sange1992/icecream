@@ -1,43 +1,114 @@
 .footer {
-  padding-top: 48px;
-  padding-bottom: 20px;
   background: var(--bg-color3);
+  @media screen and (max-width: 767.98px) {
+    padding-top: 48px;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1279.98px) {
+    padding-top: 40px;
+  }
+  @include desktop {
+    padding-top: 120px;
+  }
+  & > .container {
+    @media screen and (min-width: 768px) and (max-width: 1279.98px) {
+      width: 100%;
+      padding-left: 16px;
+      padding-right: 16px;
+    }
+  }
 }
-
+.footer__wrap {
+  @include tablet {
+    display: flex;
+    justify-content: space-between;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1279.98px) {
+    align-items: flex-start;
+  }
+  @include desktop {
+    align-items: flex-end;
+  }
+}
 .footer-title {
   font-family: 'Titan One';
-  max-width: 240px;
+  @media screen and (max-width: 767.98px) {
+    max-width: 240px;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1279.98px) {
+    max-width: 340px;
+  }
+
   text-transform: uppercase;
 }
 .footer-title__first-part {
   display: block;
-  font-size: 18px;
-  line-height: 1.166;
   color: var(--title-font-color2);
+  @media screen and (max-width: 767.98px) {
+    font-size: 18px;
+    line-height: 1.166;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1279.98px) {
+    font-size: 26px;
+    line-height: 1.15;
+    letter-spacing: 0.04em;
+  }
+  @include desktop {
+    font-size: 30px;
+    line-height: 1.33;
+    letter-spacing: 0.04em;
+  }
 
   text-align: left;
 }
 .footer-title__second-part {
   display: block;
 
-  font-size: 34px;
-  line-height: 1.15;
-  letter-spacing: 0.04em;
-  color: var(--title-font-color1);
+  @media screen and (max-width: 767.98px) {
+    font-size: 34px;
+    line-height: 1.15;
+    letter-spacing: 0.04em;
 
-  margin-top: 16px;
+    margin-top: 16px;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1279.98px) {
+    font-size: 48px;
+    line-height: 1.15;
+    letter-spacing: 0.06em;
+
+    margin-top: 12px;
+  }
+  @include desktop {
+    font-size: 58px;
+    line-height: 1.14;
+    letter-spacing: 0.06em;
+
+    margin-top: 16px;
+  }
+  color: var(--title-font-color1);
 }
 .soc-list {
-  max-width: 153px;
-
   display: flex;
-  margin-left: auto;
-  margin-top: 40px;
+  justify-content: flex-end;
+  align-items: center;
+  @media screen and (max-width: 767.98px) {
+    margin-top: 40px;
+  }
 }
-
 .soc-list__item {
-  &:not(:first-child) {
-    margin-left: 28.24px;
+  @media screen and (max-width: 767.98px) {
+    &:not(:first-child) {
+      margin-left: 28.24px;
+    }
+  }
+  @media screen and (min-width: 768px) and (max-width: 1279.98px) {
+    &:not(:first-child) {
+      margin-left: 30px;
+    }
+  }
+  @include desktop {
+    &:not(:first-child) {
+      margin-left: 24px;
+    }
   }
 }
 .soc-list__link {
@@ -50,11 +121,22 @@
 }
 .soc-list__icon {
   fill: currentColor;
+  @include tablet {
+    width: 34px;
+    height: 34px;
+  }
 }
-
 .footer-contact {
   font-weight: 700;
-  font-size: 12px;
+  @media screen and (max-width: 767.98px) {
+    font-size: 12px;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1279.98px) {
+    font-size: 14px;
+  }
+  @include desktop {
+    font-size: 16px;
+  }
   line-height: 1.86;
   text-align: right;
 
@@ -71,18 +153,40 @@
     color: var(--title-font-color2);
   }
 }
-
-.copyright-list {
+.copyright {
+  border-top: 1px solid #e1e1e1;
+  width: 100%;
+  @media screen and (max-width: 767.98px) {
+    padding-top: 16px;
+    padding-bottom: 20px;
+  }
+  @include tablet {
+    padding-top: 8px;
+    padding-bottom: 8px;
+  }
+  @media screen and (max-width: 1279.98px) {
+    margin-top: 40px;
+  }
+  @include desktop {
+    margin-top: 60px;
+  }
+}
+.copyright__list {
   font-weight: 700;
   font-size: 14px;
-  line-height: 1.52;
-  text-align: center;
   color: var(--paragraph-color2);
-  width: 100%;
-  border-top: 1px solid #e1e1e1;
+  text-align: center;
 
-  padding-top: 16px;
-  margin-top: 40px;
   margin-left: auto;
   margin-right: auto;
+  @media screen and (max-width: 767.98px) {
+    line-height: 1.52;
+  }
+  @include tablet {
+    line-height: 1.82;
+    max-width: 276px;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+  }
 }
