@@ -1,4 +1,4 @@
-.overlay {
+.overlay {       
     z-index: 5;
     position: fixed;
     top: 0;
@@ -6,7 +6,12 @@
     height: 100%;
     background: rgba(0, 0, 0, 0.2);
     transition: opacity var(--timing-duration) var(--timing-function),
-                visibility var(--timing-duration) var(--timing-function);
+        visibility var(--timing-duration) var(--timing-function);    
+
+    @include desktop {
+        display: none;
+    }
+    
 }
 
 .mob-menu {
