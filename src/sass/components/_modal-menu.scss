@@ -1,5 +1,5 @@
 .backdrop{
-    z-index: 5;
+    z-index: 9999;
     position: fixed ;
     top: 0;
     width: 100%;
@@ -23,14 +23,6 @@
     padding: 40px;
 
     @include min-mobile{
-        width: 100%;
-    }
-
-    @include mobile{
-        width: 95%;
-    }
-
-    @include tablet{
         width: 100%;
     }
 
@@ -172,6 +164,7 @@
     line-height: 1.17;
     letter-spacing: 0.03em;
     color: #757575;
+
     @include desktop{
         font-size: 14px;
         line-height: 1.71;
@@ -214,4 +207,10 @@
     border-radius: 4px;
     padding: 10px 32px;
     min-width: 200px;
+}
+
+.form__dissapear-text{
+    @media screen and (min-width: 1px) and (max-width: 480px) {
+        display: none;
+    }
 }
