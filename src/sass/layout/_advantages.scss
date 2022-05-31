@@ -30,6 +30,15 @@
 .advantages-list__item {
     max-width: 230px;
 
+    @media screen and (max-width: 767px) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
     @include tablet {
         max-width: 180px;
     }
