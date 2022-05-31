@@ -3,11 +3,6 @@
 
   // Мой ресет
 
-  *:where(:not(iframe, canvas, img, svg, video):not(svg *, symbol *)) {
-    all: unset;
-    display: revert;
-  }
-
   *,
   *::before,
   *::after {
@@ -62,6 +57,8 @@
   }
 }
 
+// Slick Edition
+
 .reviews__title {
   position: absolute;
   width: 1px;
@@ -75,91 +72,31 @@
   overflow: hidden;
 }
 
-.reviews__slider {
-  height: 100%;
-  position: relative;
-  overflow: hidden;
-  display: flex;
-  flex-flow: row nowrap;
-  align-items: flex-end;
-  justify-content: center;
-}
-
-.reviews__slider-nav {
-  width: 12px;
-  height: 12px;
-  margin-right: 18px;
-  margin-top: 588px;
-  margin-bottom: 48px;
-  border-radius: 50%;
-  background-color: #d9d9d9;
-
-  cursor: pointer;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-
-  &.reviews__slider-nav--last {
-    margin-right: 0;
-  }
+.reviews__slider-list {
+  width: 280px;
+  height: 528px;
+  margin-top: 80px;
+  margin-left: auto;
+  margin-right: auto;
 
   @media screen and (min-width: 768px) {
-    margin-top: 430px;
-    margin-bottom: 80px;
+    width: 720px;
+    height: 376px;
   }
 
   @media screen and (min-width: 1280px) {
-    margin-top: 430px;
-    margin-bottom: 120px;
+    width: 1200px;
+    height: 368px;
+    margin-top: 120px;
   }
-}
-
-.reviews__slider-nav:checked {
-  display: block;
-  content: '';
-  height: 12px;
-  width: 12px;
-  background-color: var(--bg-color2);
-  background-image: url(../images/home.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-  border-radius: 0;
-}
-.reviews__slider-nav:checked:nth-of-type(1) ~ .reviews__slider-list {
-  left: 0;
-}
-.reviews__slider-nav:checked:nth-of-type(2) ~ .reviews__slider-list {
-  left: -100%;
-}
-.reviews__slider-nav:checked:nth-of-type(3) ~ .reviews__slider-list {
-  left: -200%;
-}
-
-.reviews__slider-list {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 300%;
-  transition: left 0.4s;
-  display: flex;
-  flex-flow: row nowrap;
-}
-
-.reviews__slider-item {
-  display: flex;
-  flex: 1;
-  flex-flow: column nowrap;
-  align-items: center;
-  justify-content: center;
 }
 
 .reviews__avatar {
   width: 85px;
   height: 85px;
+  margin-left: auto;
+  margin-right: auto;
 
-  margin-top: 80px;
   margin-bottom: 32px;
 
   @media screen and (min-width: 768px) {
@@ -172,9 +109,10 @@
 }
 
 .reviews__box {
-  position: relative;
   display: flex;
   justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
   width: 280px;
   height: 308px;
 
@@ -309,4 +247,106 @@
       margin-top: 16px;
     }
   }
+}
+
+/* Stetting Slick Dots */
+
+.slick-dotted.slick-slider {
+  margin-bottom: 48px !important;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 80px !important;
+  }
+
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 120px !important;
+  }
+}
+
+.reviews__slick-dots {
+  position: absolute;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  bottom: 0;
+  margin-bottom: 120px;
+
+  width: 100%;
+  padding: 0;
+  margin: 0;
+
+  list-style: none;
+
+  text-align: center;
+}
+
+.reviews__slick-dots li {
+  position: relative;
+
+  display: inline-block;
+
+  width: 20px;
+  height: 20px;
+  margin: 0 9px;
+  padding: 0;
+
+  cursor: pointer;
+}
+
+.reviews__slick-dots li button {
+  font-size: 0;
+  line-height: 0;
+
+  display: block;
+
+  width: 20px;
+  height: 20px;
+  padding: 6px;
+
+  cursor: pointer;
+
+  color: transparent;
+  border: 0;
+  outline: none;
+  background: transparent;
+}
+
+.slick-dots li button:hover,
+.slick-dots li button:focus {
+  outline: none;
+}
+
+.reviews__slick-dots li button:hover:before,
+.reviews__slick-dots li button:focus:before {
+  opacity: 1;
+}
+
+.reviews__slick-dots li button:before {
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  display: block;
+  content: '';
+  height: 12px;
+  width: 12px;
+  background-color: var(--bg-color2);
+  background-image: url(../images/pagination.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.reviews__slick-dots li.slick-active button:before {
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  display: block;
+  content: '';
+  height: 12px;
+  width: 12px;
+  background-color: var(--bg-color2);
+  background-image: url(../images/home.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 0;
 }
