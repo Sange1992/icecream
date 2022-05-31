@@ -35,11 +35,11 @@
     position: absolute;
     left: 20px;
     bottom: 158px;
-    z-index: 10;
+    z-index: 3;
 
     @include tablet {
         left: 32px;
-        bottom: 234px;
+        bottom: 190px;
     }
 
     @include desktop {
@@ -198,7 +198,7 @@
 .hero-img-ic {
     position: absolute;
     bottom: 0;
-    z-index: 5;
+    z-index: 2;
 
     @media screen and (max-width: 382px) {
         left: 117px;
@@ -305,7 +305,7 @@
 
     @include desktop {
         right: 34px;
-        bottom: 434px;
+        bottom: 343px;
     }
 }
 
