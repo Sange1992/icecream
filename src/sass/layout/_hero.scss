@@ -170,6 +170,15 @@
     border-radius: 50%;
     background-color: var(--title-font-color2);
 
+    animation: animation-Circle;
+    animation-iteration-count: 1;
+    animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    animation-direction: reverse;
+    animation-delay: 0s;
+    animation-fill-mode: forwards;
+    animation-duration: 1s;
+
+
     @media screen and (max-width: 382px) {
         left: 36px;
     }
@@ -399,3 +408,72 @@
         height: 11px;
     }
 }
+/* stylization*/
+
+.hero__title--red,
+.cafes-list__number{
+    text-transform: uppercase;
+    line-height: 1;
+    -webkit-transition: all 0.5s ease;
+            transition: all 0.5s ease;
+}
+.hero__title--red:hover,
+.hero__title--red:focus,
+.cafes-list__number:hover,
+.cafes-list__number:focus{
+    -webkit-text-shadow: 2px 2px 2px #FFFFFF;
+    -moz-text-shadow: 2px 2px 2px #FFFFFF;
+        text-shadow: 2px 2px 2px #FFFFFF;
+}
+
+.hero__title--wite,
+.milk-text,
+.cafes-list__text{
+    
+    line-height: 1;
+    -webkit-transition: all 0.5s ease;
+            transition: all 0.5s ease;
+}
+.hero__title--wite:hover,
+.hero__title--wite:focus,
+.milk-text:hover,
+.milk-text:focus,
+.cafes-list__text:hover,
+.cafes-list__text:focus{
+    -webkit-text-shadow: 2px 2px 2px #D41443;
+    -moz-text-shadow: 2px 2px 2px #D41443;
+        text-shadow: 2px 2px 2px #D41443;
+
+}
+
+.red-btn,
+.wite-btn{    
+    text-align: center;
+    text-indent: 0px;    
+    -moz-transition: all 2s linear;
+    -o-transition: all 2s linear;
+    -webkit-transition: all 2s linear;    
+    transition: all 2s linear;
+    transition-duration: 3000ms;
+    cursor: pointer;
+}
+
+.red-btn:focus,
+.wite-btn:focus,   
+.red-btn:hover,
+.wite-btn:hover {  
+    
+    width: 100%;
+    
+}
+
+@keyframes animation-Circle {
+    0% {    
+      transform: scale(1.0);
+      background-color: #ffa5ba;   
+    }
+    100% {    
+      transform: scale(0.1);
+      background-color: #ffb8ca;
+    }
+  }
