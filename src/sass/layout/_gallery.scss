@@ -44,6 +44,19 @@
     }
 }
 
+.gallery-list__img-m {
+    @media screen and (min-width: 1280px) {
+        -webkit-transition: -webkit-transform 0.4s;
+        transition: transform 0.4s;
+        
+        &:hover,
+        &:focus {
+            -webkit-transform: scale(1.5) rotate(0.01deg);
+            transform: scale(1.5) rotate(0.01deg);
+        }
+    }
+}
+
 .gallery-box-1 {
     grid-column-start: 1;
     grid-column-end: 1;
