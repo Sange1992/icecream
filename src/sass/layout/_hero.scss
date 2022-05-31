@@ -1,50 +1,46 @@
-.hero{
-    /* display: flex;  */
-   
-    background-color: #FFB8CA;
-    @media screen and (max-width:767px){
-        /* min-width: 320px;
-        min-height: 444px;
-        justify-content: center; */
-    }
-    @media screen and (min-width:768px){
-        min-width: 468px;
-        min-height: 416px;
-
-    } 
-    @media screen and (min-width:1280px){
-        min-width: 1280px;
-        min-height: 664px;
-    }
+.hero{    
+    width: 100%;
+    background-color: #FFB8CA;    
 }
 
 .hero-button-blok{
     display: flex;
-    gap: 8px;
+    gap: 8px;    
 }
 
 body{
     margin: 0;
 }
 
-
 .hero-blok{
-    position: relative;    
-    width: 320px;
-    min-height: 444px;
-    background-size: cover;
-    background-color: #FFB8CA;
+    height: 444px;    
     @media screen and (max-width:768px){
-        display: block;
-        margin-right: 0;
+        overflow: hidden;        
     }
     @media screen and (min-width:768px){
-        width: 768px;
-        height: 416px;
+        /* width: 768px; */
+        height: 334px;
+    }
+    @media screen and (min-width:1280px){        
+        height: 580px;
+    }
+}
+
+.hero-fone{    
+    content: "";
+    width: 346px;
+    height: 344px;
+    left: 36px;
+    bottom: 75px;
+    border-radius: 50%;
+    background-color: #FFA5BA;
+    @media screen and (min-width:768px){
+        width: 335px;
+        height: 333px;
     }
     @media screen and (min-width:1280px){
-        width: 1280px;
-        height: 664px;
+        width: 534px;
+        height: 534px;
     }
 }
 
@@ -70,14 +66,12 @@ body{
 }
 
 .hero-box:nth-child(3){
-    z-index: 3;
-    
+    z-index: 3;    
     @media screen and (max-width:767px){
         top: 34px;
-        left: 117px;
+        right: 32px;
         width: 171px;
-        height: 410px;
-        
+        height: 410px;        
     }
     @media screen and (min-width:768px){
         bottom: 0;
@@ -94,11 +88,9 @@ body{
 }
 
 .hero-box:nth-child(2){
-    z-index: 2;
-    
+    z-index: 2;    
     @media screen and (max-width:767px){
-        right: 0px;
-        bottom: 75px;       
+        bottom: 75px;               
     }
     @media screen and (min-width:768px){
         bottom: 40px;
@@ -121,7 +113,6 @@ body{
         bottom: 60px;
         left: 16px;
     }
-
 }
 
 .hero-box:nth-child(5){
@@ -135,8 +126,7 @@ body{
         z-index: 3;
         bottom: 0px;
         right: 16px;
-    }
-    
+    }    
 }
 
 .hero-box:nth-child(6){
@@ -175,8 +165,7 @@ body{
     font-style: normal;
     font-weight: 400;
     font-size: 8px;
-    line-height: 1.5;             
-
+    line-height: 1.5;           
     color: #FFFFFF;
     @media screen and (min-width:1280px){
         font-size: 14px;
@@ -186,7 +175,6 @@ body{
 }
 
 .hero__title{
-    /* margin: 0; */
     width: 218px;
     @media screen and (min-width:768px){
         width: 162px;
@@ -242,7 +230,9 @@ body{
     margin-top: 20px;
     align-items: center;
     text-align: center;
-
+    display: flex;
+    justify-content: space-around;
+    cursor: pointer;
     font-family: 'DM Sans';
     font-style: normal;
     font-weight: 400;
@@ -268,6 +258,10 @@ body{
         width: 107px;
         height: 40px;
     }
+    &:hover{
+        background: #C7133E;
+        color: #FFFFFF;
+    }
 }
 
 .wite-btn{
@@ -280,6 +274,10 @@ body{
     @media screen and (min-width:1280px){
         width: 138px;
         height: 40px;
+    }
+    &:hover{
+        background: #ECEBEB;
+        color:rgba(212, 20, 67, 1);
     }
 }
 
@@ -311,11 +309,28 @@ body{
 }
 
 .numbers-blok{
+    position: relative;
+    
     list-style-type: none;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
     margin-bottom: 17px;
+    &:before {
+        content: "";
+        width: 16px;
+        height: 16px;
+        z-index: -1;
+        background-color: #fff;
+        border-radius: 50%;
+        position: absolute;
+        top: -1px;
+        right: -8px;
+        @media screen and (min-width:1280px){
+            width: 30px;
+            height: 30px;
+        }
+    }
     &:last-child{
         margin-bottom: 0;
     }
@@ -323,4 +338,27 @@ body{
         margin-bottom: 18px;
     }   
 }
+.arrov-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    cursor: pointer;
+    width: 18px;
+    height: 18px;
+    background-color: #ffffff;
+    @media screen and (min-width:1280px){
+        width: 26px;
+        height: 26px;
+    } 
+}
+.arrov_img{
+    width: 6px;
+    height: 7px;    
+    fill: #d41342;
+    @media screen and (min-width:1280px){
+        width: 10px;
+        height: 11px;
+    }
 
+}

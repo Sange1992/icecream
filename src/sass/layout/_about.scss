@@ -2,6 +2,7 @@
   padding: 40px 0 0 0;
   background-color: var(--bg-color3);
 
+
   @include tablet {
     padding: 20px 0 0 0;
   }
@@ -9,6 +10,7 @@
   @include desktop {
     padding: 60px 0 0 0;
   }
+
 }
 
 .section-about__bg-milk {
@@ -29,8 +31,10 @@
     }
     background-repeat: no-repeat;
     background-size: contain;
+
     background-position: 0% 100%;
     //width: auto;
+
     max-width: 1280px;
   }
 }
@@ -47,6 +51,7 @@
   margin-right: auto;
   color: var(--title-font-color2);
 
+
   @include tablet {
     font-size: 26px;
     line-height: 1.15;
@@ -56,6 +61,7 @@
     font-size: 30px;
     line-height: 1.13;
   }
+
 }
 
 .section-about__title {
@@ -74,6 +80,7 @@
   text-transform: uppercase;
 
   color: var(--title-font-color1);
+
 
   @include tablet {
     margin-top: 16px;
@@ -101,10 +108,12 @@
   @include desktop {
     margin-top: 60px;
   }
+
 }
 
 .section-about__img {
   margin-top: 15px;
+
 
   @include tablet {
     margin-top: 0px;
@@ -113,6 +122,7 @@
   @include desktop {
     margin-right: 137px;
   }
+
 }
 
 .section-about__text {
@@ -123,6 +133,7 @@
   font-size: 12px;
   line-height: 1.62;
 
+
   @include tablet {
     width: 334px;
     font-size: 14px;
@@ -132,11 +143,13 @@
   @include desktop {
     width: 463px;
   }
+
 }
 
 .section-about__text--first {
   color: var(--paragraph-color1);
   margin: 40px 0;
+
 
   @include tablet {
     margin-top: 0px;
@@ -148,10 +161,12 @@
     line-height: 1.75;
     letter-spacing: 0.04em;
   }
+
 }
 
 .section-about__text--second {
   color: var(--paragraph-color2);
+
 
   @include tablet {
     letter-spacing: 0.04em;
@@ -159,6 +174,7 @@
   @include desktop {
     line-height: 1.93;
   }
+
 }
 
 .about-btn-read-more {
@@ -186,13 +202,16 @@
     background-color: var(--btn-hover-color2);
   }
 
+
   @include tablet {
     margin-top: 40px;
     font-size: 16px;
     line-height: 1.31;
   }
+
 }
 
 .about-btn-read-more__icon {
   margin-left: 13px;
+
 }
