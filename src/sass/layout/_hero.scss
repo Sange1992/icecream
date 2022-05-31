@@ -169,9 +169,10 @@
     height: 344px;
     border-radius: 50%;
     background-color: var(--title-font-color2);
-    animation: animationCircle;
+
+    animation: animation-Circle;
     animation-iteration-count: 1;
-    animation-timing-function: $cubic;
+    animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     animation-direction: reverse;
     animation-delay: 0s;
     animation-fill-mode: forwards;
@@ -462,6 +463,17 @@
 .red-btn:hover,
 .wite-btn:hover {  
     
-    width: 60%;
+    width: 100%;
     
 }
+
+@keyframes animation-Circle {
+    0% {    
+      transform: scale(1.0);
+      background-color: #ffa5ba;   
+    }
+    100% {    
+      transform: scale(0.1);
+      background-color: #ffb8ca;
+    }
+  }
