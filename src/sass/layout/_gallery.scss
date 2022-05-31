@@ -17,17 +17,17 @@
     grid-template-rows: repeat(9, 1fr);
     gap: 2px;
 
-    // @media screen and (min-width: 768px) {
-    //     gap: 4px;
-    //     max-width: 620px;
-    //     max-height: 264px;
-    // }
+    @media screen and (min-width: 768px) {
+        gap: 4px;
+        max-width: 620px;
+        max-height: 264px;
+    }
 
-    // @media screen and (min-width: 1280px) {
-    //     gap: 6px;
-    //     max-height: 430px;
-    //     max-width: 1010px;
-    // }
+    @media screen and (min-width: 1280px) {
+        gap: 6px;
+        max-height: 430px;
+        max-width: 1010px;
+    }
 }
 
 .gallery-list__img {
@@ -39,8 +39,8 @@
     transition: transform 0.4s;
     &:hover,
     &:focus {
-        -webkit-transform: scale(1.8) rotate(0.01deg);
-        transform: scale(1.8) rotate(0.01deg);
+        -webkit-transform: scale(2.5) rotate(0.01deg);
+        transform: scale(2.5) rotate(0.01deg);
     }
 }
 
