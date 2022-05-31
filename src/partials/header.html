@@ -1,14 +1,39 @@
 <header class="header">
-  <div class="container">
-    <div class="header-box">
-      <a class="header-box__link" href="index.html">
-        <img class="header-box__logo" src="./images/logo.png" alt="logo" />
-      </a>
-      <button type="button" class="header-box__btn" data-mob-menu-open>
-        <svg class="header-box__icon" aria-label="Переключатель мобильного меню">
-          <use class="header-box__icon-cross" href="./images/sprite.svg#cross"></use>
-        </svg>
-      </button>
+    <div class="header-container">   
+        <a class="header-box__link" href="index.html">
+            <img class="header-box__logo" src="./images/logo.png" alt="logo">
+        </a>
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__item">
+                <a class="nav__link nav__link--select" href="./index.html" title="Home">Home</a>
+                </li>
+                <li class="nav__item">
+                <a class="nav__link" href="#advantages" title="About us">About us</a>
+                </li>
+                <li class="nav__item">
+                <a class="nav__link" href="#about" title="How it’s made?">How it’s made?</a>
+                </li>
+                <li class="nav__item">
+                <a class="nav__link" href="#products" title="Our products">Our products</a>
+                </li>
+                <li class="nav__item">
+                <a class="nav__link" href="#contacts" title="Contact">Contact</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="btn-wrap">
+            <button type="button" class="header-box__btn" data-mob-menu-open>
+                <svg class="header-box__icon" aria-label="Переключатель мобильного меню">
+                    <use class="header-box__icon-cross" href="./images/sprite.svg#cross"></use>
+                </svg>
+            </button>
+            <button type="button" class="secondary-btn header-main-btn">
+                Buy now
+                <svg class="primary-btn__icon--margin" width="5" height="8">
+                    <use href="./images/sprite.svg#mark"></use>
+                </svg>
+            </button>
+        </div>
     </div>
-  </div>
 </header>
