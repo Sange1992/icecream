@@ -2,7 +2,7 @@
   const refs = {
     openmodalBtn: document.querySelector('[data-modal-contacts-open-se]'),
     closemodalBtn: document.querySelector('[data-modal-contacts-close-se]'),
-    modal: document.querySelector('[data-modal-contacts]'),
+    modal: document.querySelector('[data-modal-contacts-se]'),
   };
 
   refs.openmodalBtn.addEventListener('click', togglemodal);
