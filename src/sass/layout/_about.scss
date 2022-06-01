@@ -2,7 +2,6 @@
   padding: 40px 0 0 0;
   background-color: var(--bg-color3);
 
-
   @include tablet {
     padding: 20px 0 0 0;
   }
@@ -10,12 +9,11 @@
   @include desktop {
     padding: 60px 0 0 0;
   }
-
 }
 
 .section-about__bg-milk {
   margin: 0 auto;
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 480px) {
     background-repeat: no-repeat;
     background-size: contain;
     background-position: 0% 78%;
@@ -32,11 +30,8 @@
     }
     background-repeat: no-repeat;
     background-size: contain;
-
     background-position: 0% 100%;
-    //width: auto;
-
-    max-width: 1280px;
+    max-width: 1920px;
   }
 }
 
@@ -52,7 +47,6 @@
   margin-right: auto;
   color: var(--title-font-color2);
 
-
   @include tablet {
     font-size: 26px;
     line-height: 1.15;
@@ -62,7 +56,6 @@
     font-size: 30px;
     line-height: 1.13;
   }
-
 }
 
 .section-about__title {
@@ -81,7 +74,6 @@
   text-transform: uppercase;
 
   color: var(--title-font-color1);
-
 
   @include tablet {
     margin-top: 16px;
@@ -109,12 +101,10 @@
   @include desktop {
     margin-top: 60px;
   }
-
 }
 
 .section-about__img {
   margin-top: 15px;
-
 
   @include tablet {
     margin-top: 0px;
@@ -123,51 +113,71 @@
   @include desktop {
     margin-right: 137px;
   }
+}
 
+.section-about__img-pos {
+  @media screen and (max-width: 767px) {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.section-about__text-box {
+  padding-top: 40px;
+
+  @include tablet {
+    padding-top: 0px;
+  }
+
+  @include desktop {
+    padding-top: 72px;
+  }
 }
 
 .section-about__text {
-  width: 220px;
+  max-width: 220px;
   font-family: 'DM Sans';
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
   line-height: 1.62;
-
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
 
   @include tablet {
-    width: 334px;
+    max-width: 334px;
     font-size: 14px;
     line-height: 1.76;
+    text-align: left;
   }
 
   @include desktop {
-    width: 463px;
+    max-width: 463px;
   }
-
 }
 
 .section-about__text--first {
   color: var(--paragraph-color1);
-  margin: 40px 0;
 
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 40px;
+  text-align: center;
 
   @include tablet {
-    margin-top: 0px;
     margin-bottom: 32px;
+    text-align: left;
   }
   @include desktop {
-    margin-top: 72px;
     font-size: 16px;
     line-height: 1.75;
     letter-spacing: 0.04em;
   }
-
 }
 
 .section-about__text--second {
   color: var(--paragraph-color2);
-
 
   @include tablet {
     letter-spacing: 0.04em;
@@ -175,11 +185,12 @@
   @include desktop {
     line-height: 1.93;
   }
-
 }
 
 .about-btn-read-more {
   margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
   padding: 0 37px;
   background-color: var(--btn-color2);
   border-radius: 22px;
@@ -203,16 +214,15 @@
     background-color: var(--btn-hover-color2);
   }
 
-
   @include tablet {
     margin-top: 40px;
+    margin-left: 0;
+    margin-right: 0;
     font-size: 16px;
     line-height: 1.31;
   }
-
 }
 
 .about-btn-read-more__icon {
   margin-left: 13px;
-
 }
