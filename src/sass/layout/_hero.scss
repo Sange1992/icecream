@@ -418,8 +418,8 @@
 .cafes-list__number{
     text-transform: uppercase;
     line-height: 1;
-    -webkit-transition: all 0.5s ease;
-            transition: all 0.5s ease;
+    -webkit-transition: text-shadow var(--timing-duration) ease;
+            transition: text-shadow var(--timing-duration) ease;
 }
 .hero__title--red:hover,
 .hero__title--red:focus,
@@ -435,8 +435,8 @@
 .cafes-list__text{
     
     line-height: 1;
-    -webkit-transition: all 0.5s ease;
-            transition: all 0.5s ease;
+    -webkit-transition: text-shadow var(--timing-duration) ease;
+            transition: text-shadow var(--timing-duration) ease;
 }
 .hero__title--wite:hover,
 .hero__title--wite:focus,
@@ -454,11 +454,11 @@
 .wite-btn{    
     text-align: center;
     text-indent: 0px;    
-    -moz-transition: all 1s linear;
-    -o-transition: all 1s linear;
-    -webkit-transition: all 1s linear;    
-    transition: all 1s linear;
-    transition-duration: 1000ms;
+    -moz-transition: width var(--timing-duration) linear;
+    -o-transition: width var(--timing-duration) linear;
+    -webkit-transition: width var(--timing-duration) linear;    
+    transition: width var(--timing-duration) linear;
+    
     cursor: pointer;
 }
 
