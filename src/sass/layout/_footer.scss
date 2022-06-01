@@ -171,7 +171,8 @@
     margin-top: 60px;
   }
 }
-.copyright__list {
+.copyright__text {
+  display: block;
   font-weight: 700;
   font-size: 14px;
   color: var(--paragraph-color2);
@@ -181,12 +182,10 @@
   margin-right: auto;
   @media screen and (max-width: 767.98px) {
     line-height: 1.52;
+    max-width: 150px;
   }
   @include tablet {
     line-height: 1.82;
     max-width: 276px;
-    display: flex;
-    justify-content: center;
-    align-items: baseline;
   }
 }
