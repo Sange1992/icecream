@@ -101,16 +101,15 @@
 }
 
 .hero__button {
+    margin-top: 20px;    
+    text-align: center;
     display: flex;
     align-items: center;
     justify-content: space-around;
     border-radius: 20px;
     border: none;
-    cursor: pointer;
-    
-
+    cursor: pointer;    
     font-family: DM Sans, sans-serif;
-
     font-weight: 400;
     font-size: 8px;
     line-height: 1.25;
@@ -126,13 +125,15 @@
 }
 
 .red-btn {
-    min-width: 62px;
-    height: 24px;
+    width: 62.4px;
+    height: 24px;    
+    border-radius: 20px;
+    border: none;
     background: var(--btn-color1);
     color: #FFFFFF;
 
     @include desktop {
-        min-width: 107px;
+        width: 107px;
         height: 40px;
     }
 
@@ -144,13 +145,15 @@
 }
 
 .wite-btn {
-    min-width: 83px;
-    height: 24px;
+    width: 82.8px;
+    height: 24px;    
+    border-radius: 20px;    
+    border: none;;
     background: var(--main-font-color);
     color: var(--accent-font-color);
 
     @include desktop {
-        min-width: 138px;
+        width: 138px;
         height: 40px;
     }
 
@@ -284,7 +287,8 @@
     @include desktop {
         width: 10px;
         height: 11px;
-    }
+    }   
+    
 }
 
 .hero-img-tasty {
@@ -414,8 +418,8 @@
 .cafes-list__number{
     text-transform: uppercase;
     line-height: 1;
-    -webkit-transition: all 0.5s ease;
-            transition: all 0.5s ease;
+    -webkit-transition: text-shadow var(--timing-duration) ease;
+            transition: text-shadow var(--timing-duration) ease;
 }
 .hero__title--red:hover,
 .hero__title--red:focus,
@@ -431,8 +435,8 @@
 .cafes-list__text{
     
     line-height: 1;
-    -webkit-transition: all 0.5s ease;
-            transition: all 0.5s ease;
+    -webkit-transition: text-shadow var(--timing-duration) ease;
+            transition: text-shadow var(--timing-duration) ease;
 }
 .hero__title--wite:hover,
 .hero__title--wite:focus,
@@ -450,11 +454,11 @@
 .wite-btn{    
     text-align: center;
     text-indent: 0px;    
-    -moz-transition: all 2s linear;
-    -o-transition: all 2s linear;
-    -webkit-transition: all 2s linear;    
-    transition: all 2s linear;
-    transition-duration: 3000ms;
+    -moz-transition: width var(--timing-duration) linear;
+    -o-transition: width var(--timing-duration) linear;
+    -webkit-transition: width var(--timing-duration) linear;    
+    transition: width var(--timing-duration) linear;
+    
     cursor: pointer;
 }
 
@@ -462,9 +466,7 @@
 .wite-btn:focus,   
 .red-btn:hover,
 .wite-btn:hover {  
-    
-    width: 100%;
-    
+    width: 60%;    
 }
 
 @keyframes animation-Circle {
