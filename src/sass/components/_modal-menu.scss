@@ -9,7 +9,7 @@
 }
   
 .modal{
-    overflow: scroll;
+    overflow:auto;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -26,12 +26,18 @@
     @include min-mobile{
         width: 100%;
     }
+    @media screen and (max-width:768px) and (orientation: landscape) {
+        top: 10px;
+        transform: translate(-50%,);
+        overflow: scroll;
+    }
 
     @include desktop{
         max-width: 528px;
         height: 600px;
-        overflow-y: unset;
     }
+ 
+
 }
   
 .modal__close{

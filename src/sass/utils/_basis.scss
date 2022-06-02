@@ -18,6 +18,9 @@ body::after,
 body::before {
   box-sizing: border-box;
 }
+.no-scroll {
+  overflow: hidden;
+}
 p,
 h1,
 h2,
