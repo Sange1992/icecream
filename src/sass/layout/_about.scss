@@ -33,6 +33,11 @@
     background-position: 0% 100%;
     max-width: 1920px;
   }
+  @media screen and (min-width: 1661px) {
+    background-size: cover;
+  }
+    
+  
 }
 
 .section-about__label {
