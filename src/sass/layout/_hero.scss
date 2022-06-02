@@ -50,6 +50,7 @@
 
 
 .hero__title {
+    cursor:default;
 
     width: 218px;
     margin-bottom: 20px;
@@ -247,6 +248,7 @@
 }
 
 .milk-text {
+    cursor: default;
     max-width: 114px;
     margin-bottom: 7px;
 
@@ -323,6 +325,7 @@
 }
 
 .cafes-list__item {
+    cursor: default;
     position: relative;
     z-index: 1;
 
