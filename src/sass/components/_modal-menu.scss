@@ -29,7 +29,7 @@
 
     @include desktop{
         max-width: 528px;
-        height: 581px;
+        height: 600px;
         overflow-y: unset;
     }
 }
@@ -130,6 +130,9 @@
         line-height: 1.14;
         letter-spacing: 0.01em;
         color: rgba(117, 117, 117, 0.5);
+    }
+    &:focus{
+        border-color: var(--title-font-color1);
     }
 }
 
